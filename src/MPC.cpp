@@ -5,7 +5,14 @@
 
 using CppAD::AD;
 
-// TODO: Set the timestep length and duration
+// Set the timestep length and duration
+
+// These two hyperparameter determine how far from the front of the car
+// the model can see. A big value of the product N * dt means the car
+// takes into account more point in front of it, on the opposite, a small value
+// means the car can see only a few meter in front of it.
+// In this particular track, with a couple of S turn it does have sense keeping
+// the N * dt product small.
 size_t N = 10;
 double dt = 0.1;
 
