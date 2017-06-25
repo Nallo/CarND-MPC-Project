@@ -48,7 +48,16 @@ equations are taken into account:
 (elapsed duration between timesteps) values. Additionally the student details
 the previous values tried.*
 
-*TODO*
+The final *N* and *dt* values are:
+
+  - *N* = 10
+  - *dt* = 0.1
+
+With the following values, the optimizer is taking into account a 1 second window
+in which determines the vehicle trajectory. Other values tried in the model were:
+
+  - (*N*, *dt*) = (20, 0.05)
+  - (*N*, *dt*) = (20, 0.10)
 
 ### Polynomial Fitting and MPC Preprocessing
 
