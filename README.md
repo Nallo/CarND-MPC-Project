@@ -1,7 +1,39 @@
 # CarND-Controls-MPC
+
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+
+# Model Predictive Controller Project
+
+### The Model
+
+*Student describes their model in detail. This includes the state, actuators and
+update equations.*
+
+*TODO*
+
+### Timestep Length and Elapsed Duration (N & dt)
+
+*Student discusses the reasoning behind the chosen N (timestep length) and dt
+(elapsed duration between timesteps) values. Additionally the student details
+the previous values tried.*
+
+*TODO*
+
+### Polynomial Fitting and MPC Preprocessing
+
+*A polynomial is fitted to waypoints. If the student preprocesses waypoints, the
+vehicle state, and/or actuators prior to the MPC procedure it is described.*
+
+*TODO*
+
+### Model Predictive Control with Latency
+
+*The student implements Model Predictive Control that handles a 100 millisecond
+latency. Student provides details on how they deal with latency.*
+
+*TODO*
 
 ## Dependencies
 
@@ -19,7 +51,7 @@ Self-Driving Car Engineer Nanodegree Program
   * Run either `install-mac.sh` or `install-ubuntu.sh`.
   * If you install from source, checkout to commit `e94b6e1`, i.e.
     ```
-    git clone https://github.com/uWebSockets/uWebSockets 
+    git clone https://github.com/uWebSockets/uWebSockets
     cd uWebSockets
     git checkout e94b6e1
     ```
@@ -31,7 +63,7 @@ Self-Driving Car Engineer Nanodegree Program
   * Mac: `brew install ipopt`
   * Linux
     * You will need a version of Ipopt 3.12.1 or higher. The version available through `apt-get` is 3.11.x. If you can get that version to work great but if not there's a script `install_ipopt.sh` that will install Ipopt. You just need to download the source from the Ipopt [releases page](https://www.coin-or.org/download/source/Ipopt/) or the [Github releases](https://github.com/coin-or/Ipopt/releases) page.
-    * Then call `install_ipopt.sh` with the source directory as the first argument, ex: `bash install_ipopt.sh Ipopt-3.12.1`. 
+    * Then call `install_ipopt.sh` with the source directory as the first argument, ex: `bash install_ipopt.sh Ipopt-3.12.1`.
   * Windows: TODO. If you can use the Linux subsystem and follow the Linux instructions.
 * [CppAD](https://www.coin-or.org/CppAD/)
   * Mac: `brew install cppad`
