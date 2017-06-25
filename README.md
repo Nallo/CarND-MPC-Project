@@ -72,7 +72,12 @@ map coordinate system to the car coordinate system.
 *The student implements Model Predictive Control that handles a 100 millisecond
 latency. Student provides details on how they deal with latency.*
 
-*TODO*
+Dealing with the model latency involved two factors:
+
+  - The actuations have been modified so to handle not only the previous timestamp
+    but also a timestamp later.
+  - The cost function has been modified to handle an additional cost which penalizes
+    the combination of velocity and steering angle, as suggested in the video lessons.
 
 ## Dependencies
 
