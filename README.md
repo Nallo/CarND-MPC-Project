@@ -6,6 +6,23 @@ Self-Driving Car Engineer Nanodegree Program
 
 # Model Predictive Controller Project
 
+The following repository implements a Model Predictive Controller for the Udcity
+Self-Driving Car Nanodegree Program.
+
+The goal of the project is to navigate a car in a simulator. The simulator provides
+a set of information related to the car (waypoints and telemetry data).
+
+The model uses such pieces of information to compute:
+
+  - the steering angle of the car
+  - the acceleration of the car
+  - the car optimal trajectory
+
+In particular, the trajectory is computed using a third-order polynomial fit to
+the map's waypoints. In addition, the optimization process takes into account
+only a reduced set of waypoints (those closest to the front of the car) and it
+minimizes both e Cross Track Error (*cte*) and the Orientation Angle Error.
+
 ### The Model
 
 *Student describes their model in detail. This includes the state, actuators and
