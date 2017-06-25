@@ -64,7 +64,8 @@ in which determines the vehicle trajectory. Other values tried in the model were
 *A polynomial is fitted to waypoints. If the student preprocesses waypoints, the
 vehicle state, and/or actuators prior to the MPC procedure it is described.*
 
-*TODO*
+Waypoints are pre-processed in order to transform they *x* and *y* values from the
+map coordinate system to the car coordinate system.
 
 ### Model Predictive Control with Latency
 
