@@ -21,14 +21,26 @@ The model uses such pieces of information to compute:
 In particular, the trajectory is computed using a third-order polynomial fit to
 the map's waypoints. In addition, the optimization process takes into account
 only a reduced set of waypoints (those closest to the front of the car) and it
-minimizes both e Cross Track Error (*cte*) and the Orientation Angle Error.
+minimizes both e Cross Track Error (*cte*) and the Orientation Angle Error (*epsi*).
 
 ### The Model
 
 *Student describes their model in detail. This includes the state, actuators and
 update equations.*
 
-*TODO*
+The kinematic model includes:
+
+  - the car position (*x* and *y* coordinates)
+  - the car orientation angle (*psi*)
+  - the car velocity (*v*)
+  - the Cross Track Error (*cte*)
+  - the Orientation Angle Error (*epsi*)
+
+The model actuator computes the new car acceleration based on the current vehicle
+state and the previous one. In order to future state of the vehicle the following
+equations are taken into account:
+
+![Model Equations](img/model_equations.png)
 
 ### Timestep Length and Elapsed Duration (N & dt)
 
